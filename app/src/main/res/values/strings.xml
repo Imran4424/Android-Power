@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Power</string>
     <string name="accessibility_service_label">Power Menu Accessibility</string>
+    <string name="accessibility_service_description">Triggers Power Menu UI</string>
 </resources>
