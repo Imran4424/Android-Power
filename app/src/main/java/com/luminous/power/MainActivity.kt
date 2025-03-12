@@ -12,7 +12,7 @@ class MainActivity : ComponentActivity() {
             PowerMenuAccessibilityService.instance?.showPowerMenu()
         } else {
             Toast.makeText(this, "Please enable Accessibility Service", Toast.LENGTH_SHORT).show()
-            //startActivity(Intent(android.provider.Settings.ACTION_ACCESSIBILITY_SETTINGS))
+            startActivity(Intent(android.provider.Settings.ACTION_ACCESSIBILITY_SETTINGS))
         }
 
         finish()
