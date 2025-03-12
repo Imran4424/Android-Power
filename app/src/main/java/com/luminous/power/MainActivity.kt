@@ -1,5 +1,6 @@
 package com.luminous.power
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.ComponentActivity
@@ -11,7 +12,7 @@ class MainActivity : ComponentActivity() {
             PowerMenuAccessibilityService.instance?.showPowerMenu()
         } else {
             Toast.makeText(this, "Please enable Accessibility Service", Toast.LENGTH_SHORT).show()
-            //startActivity(Intent(android.provider.Settings.ACTION_ACCESSIBILITY_SETTINGS))
+            startActivity(Intent(android.provider.Settings.ACTION_ACCESSIBILITY_SETTINGS))
         }
 
         finish()
