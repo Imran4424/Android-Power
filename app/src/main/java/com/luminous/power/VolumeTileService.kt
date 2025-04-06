@@ -1,7 +1,6 @@
 package com.luminous.power
 
 import android.content.Context
-import android.graphics.drawable.Icon
 import android.media.AudioManager
 import android.service.quicksettings.TileService
 
