@@ -12,10 +12,4 @@ class VolumeTileService : TileService() {
         // This call nudges the system to display the volume UI without changing the volume level.
         audioManager.adjustVolume(AudioManager.ADJUST_SAME, AudioManager.FLAG_SHOW_UI)
     }
-
-    override fun onStartListening() {
-        super.onStartListening()
-        qsTile?.icon = Icon.createWithResource(this, R.drawable.ic_volume)
-        qsTile?.updateTile()
-    }
 }
