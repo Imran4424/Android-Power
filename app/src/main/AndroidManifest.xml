@@ -49,7 +49,7 @@
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
             <meta-data
-                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:name="android.service.quicksettings.Tile"
                 android:value="true" />
         </service>
     </application>
