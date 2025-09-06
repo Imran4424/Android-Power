@@ -6,7 +6,6 @@
     android:minWidth="40dp"
     android:minHeight="40dp"
     android:previewImage="@drawable/ic_lock"
-    android:previewLayout="@layout/widget_lock"
-    android:resizeMode="horizontal|vertical"
-    android:updatePeriodMillis="86400000"
+    android:resizeMode="none"
+    android:updatePeriodMillis="0"
     android:widgetCategory="home_screen" />
