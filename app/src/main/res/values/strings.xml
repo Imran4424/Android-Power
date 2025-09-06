@@ -3,4 +3,5 @@
     <string name="volume_service_name">Adjust Volume</string>
     <string name="accessibility_service_label">Power Menu Accessibility</string>
     <string name="accessibility_service_description">Triggers Power Menu UI</string>
+    <string name="lock_now">Lock</string>
 </resources>
