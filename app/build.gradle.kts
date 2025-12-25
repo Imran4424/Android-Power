@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "com.luminous.power"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.luminous.power"
         minSdk = 28
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 6
         versionName = "3.03"
 
