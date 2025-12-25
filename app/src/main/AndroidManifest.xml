@@ -24,6 +24,13 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".VolumeTriggerActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:taskAffinity="" />
+
         <!-- Accessibility Service Declaration -->
         <service
             android:name=".PowerMenuAccessibilityService"

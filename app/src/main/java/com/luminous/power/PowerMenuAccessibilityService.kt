@@ -5,6 +5,7 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
+import android.media.AudioManager
 import android.os.Build
 import android.view.accessibility.AccessibilityEvent
 
@@ -46,6 +47,17 @@ class PowerMenuAccessibilityService: AccessibilityService() {
 
     fun showPowerMenu() {
         performGlobalAction(GLOBAL_ACTION_POWER_DIALOG)
+    }
+
+    fun showVolumeUI() {
+        // 1. Collapse the Control Center/Notification Shade
+        performGlobalAction(GLOBAL_ACTION_DISMISS_NOTIFICATION_SHADE)
+
+        // 2. Use the handler to wait for the shade animation to finish (approx 200ms)
+        android.os.Handler(android.os.Looper.getMainLooper()).postDelayed({
+            val audioManager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
+            audioManager.adjustVolume(AudioManager.ADJUST_SAME, AudioManager.FLAG_SHOW_UI)
+        }, 200)
     }
 
     private fun unregisterReceiverSafe() = runCatching { unregisterReceiver(lockReceiver) }
