@@ -12,8 +12,8 @@ android {
         applicationId = "com.luminous.power"
         minSdk = 28
         targetSdk = 36
-        versionCode = 6
-        versionName = "3.03"
+        versionCode = 7
+        versionName = "3.33"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
