@@ -12,8 +12,8 @@ android {
         applicationId = "com.luminous.power"
         minSdk = 28
         targetSdk = 36
-        versionCode = 7
-        versionName = "3.33"
+        versionCode = 8
+        versionName = "3.53"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -24,7 +24,7 @@ android {
             isMinifyEnabled = true
             // Removes unused resources (layouts, drawables, etc.)
             isShrinkResources = true
-            
+
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
