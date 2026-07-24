@@ -6,14 +6,14 @@ plugins {
 
 android {
     namespace = "com.luminous.power"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "com.luminous.power"
         minSdk = 28
-        targetSdk = 36
-        versionCode = 8
-        versionName = "3.53"
+        targetSdk = 37
+        versionCode = 9
+        versionName = "3.553"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
